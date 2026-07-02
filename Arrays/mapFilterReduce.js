@@ -20,13 +20,13 @@ let newArr3 = arr3.filter(function(val) {
 }); 
 
 
-//****Reduce */
+//****Reduce */acc=count
 let ans =  arr3.reduce (function(accumulator, val){
   return accumulator + val;
  }, 0);
 
 
- //****find */
+ //****find ek  value find krke deta h */
  let va = arr3.find(function (val){
   return val === 1;
  });
