@@ -17,7 +17,7 @@ h1.addEventListener('dblclick',dblclick);
 //************removing event listener */
 h1.removeEventListener("dblclick", dblclick);
 
-//****************** */
+//****************** common events*/
 let input = document.querySelector("input");
 input.addEventListener("input", function () {
   console.log("clicked");
@@ -26,3 +26,15 @@ input.addEventListener("input", function () {
 input.addEventListener("input", function (evt) {
   console.log(evt.data);
 })
+
+//****change event:- change events tab chalta hai jab aapka koi input select ya textarea mein koi change ho jaye */
+
+let sel = document.querySelector("select");
+let device = document.querySelector("#device");
+
+sel.addEventListener("change", function(dets) {
+  device.textContent = `${dets.target.value} Device Selected`;
+});
+
+
+
