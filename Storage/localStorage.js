@@ -27,3 +27,7 @@ sessionStorage.clear("name");
 //localStorage sessionStorage - ~5Mb
 
 //cookies me jo bhi data store karoge wo data page reload par automatically server par jaayega
+
+localStorage.setItem("friends", JSON.stringify(["akash", "hasrsh", "amit"]));
+let fr = JSON.parse(localStorage.getItem("friends"));
+console.log(fr);
