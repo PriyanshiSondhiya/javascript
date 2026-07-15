@@ -1,0 +1,3 @@
+function createBiscuits() {
+ this.name = ""
+}
